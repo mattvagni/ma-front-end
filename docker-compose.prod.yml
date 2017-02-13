@@ -1,0 +1,6 @@
+ma-front-end:
+  build: .
+  environment:
+    NODE_ENV: production
+  ports:
+    - '5000:5000'

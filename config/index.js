@@ -1,4 +1,5 @@
 const path = require('path');
+const ip = require('ip');
 
 const env = process.env.NODE_ENV || 'development';
 const isProd = env === 'production';
@@ -22,7 +23,7 @@ const config = {
   env,
   isProd,
   isDev,
-  hostname: process.env.HOSTNAME || 'localhost',
+  hostname: ip.address() || 'localhost',
   port: process.env.PORT || 5000,
   bundles: {
     client: {

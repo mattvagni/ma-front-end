@@ -16,6 +16,7 @@
   "author": "Sam King",
   "license": "MIT",
   "dependencies": {
+    "ip": "^1.1.4",
     "koa": "next",
     "koa-compress": "next",
     "koa-convert": "^1.2.0",

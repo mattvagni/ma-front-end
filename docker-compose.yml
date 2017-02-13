@@ -1,0 +1,11 @@
+ma-front-end:
+  build: .
+  command: yarn run start:dev
+  container_name: ma_front_end
+  environment:
+    NODE_ENV: development
+  ports:
+    - '5000:5000'
+  volumes:
+    - .:/home/app/ma-front-end
+    - /home/app/ma-front-end/node_modules
